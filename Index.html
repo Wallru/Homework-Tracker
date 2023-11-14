@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Homework Tracker</h1>
+    </header>
+    <main>
+        <form id="homeworkForm">
+            <label for="homeworkName">Homework Name:</label>
+            <input type="text" id="homeworkName" name="homeworkName" required>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+
+            <button type="button" onclick="addHomework()">Add Homework</button>
+        </form>
+
+        <table id="homeworkTable">
+            <thead>
+                <tr>
+                    <th>Homework Name</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Homework items will be dynamically added here -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
